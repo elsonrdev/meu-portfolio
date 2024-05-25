@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tittle -->
+    <title>Meus projetos</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/sections/projects.css">
+    <!--Fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+        <div class="interface">
+                <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="Minha logo">
+                        </a>
+                </div><!--Logo-->
+
+                <nav class="menu-desktop">
+                    <ul>
+                        <li><a href="index.html">Sobre mim</a></li>
+                        <li><a href="habilidades.html">Habilidades</a></li>
+                        <li><a href="projetos.html">Projetos</a></li>
+                    </ul>
+                </nav>
+
+                <div class="menu-mobile">
+                    <span class="hamburger-icon">&#9776;</span>
+                </div>
+        </div><!--Interface-->
+
+        <nav class="menu-mobile-lateral">
+            <ul>
+                <li><a href="index.html">Sobre mim</a></li>
+                <li><a href="habilidades.html">Habilidades</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="projetos">
+            <div class="interface">
+
+                <div class="txt-topo-site">
+                    <h1>Meus projetos</h1>
+                </div>
+
+                <div class="paragrafo-txt-topo-site">
+                    <p>Olá! Aqui você encontrará alguns dos projetos que desenvolvi ao longo do tempo. Cada projeto representa uma etapa do meu aprendizado e aprimoramento.
+                        Explorar esses projetos permitirá que você veja a evolução das minhas habilidades e a diversidade dos meus interesses. Cada um deles foi uma oportunidade para enfrentar novos desafios, aprender com a prática e alcançar resultados significativos.
+                    </p>
+                </div>
+
+                <div class="flex">
+                    <div class="projetos-box">
+                        <img src="images/projeto 1.png" alt="">
+                    </div>
+                    <div class="projetos-box">
+                        <img src="images/projeto 2.png" alt="">
+                    </div>
+                    <div class="projetos-box">
+                        <img src="images/projeto 3.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="rodape">
+            <img src="images/Logo Alura Include.png" alt="">
+            <p>Desenvolvido por Elson</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.hamburger-icon').addEventListener('click', function() {
+            document.querySelector('.menu-mobile-lateral').classList.toggle('open');
+        });
+    </script>
+
+</body>
+</html>

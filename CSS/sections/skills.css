@@ -1,0 +1,158 @@
+
+/* Estilo Geral */
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: white;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+/* Estilo do cabeçalho */
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+header a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #ff3c00;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+section .habilidades{
+    padding: 40px 0;
+}
+
+section .txt-topo-site{
+    display: flex;
+    font-size: 30px;
+    color: #ff3c00;
+}
+
+section .flex{
+    gap: 40px;
+}
+
+.habilidades .habilidades-box{
+    color:#ff3c00;
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid black;
+    margin-top: 30px;
+}
+
+.habilidades .habilidades-box img{
+    max-width:250px;
+    max-height:200px;
+    width: auto;
+    height: auto;
+}
+
+.habilidades .habilidades-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.rodape{
+    color:black;
+    background-color: #ff3c00;
+    text-align: center;
+    padding: 15px 4%;
+    box-shadow: 0 0 40px 10px #ff3c00;
+}
+
+/* Estilo do menu mobile */
+.menu-mobile {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger-icon {
+    font-size: 30px;
+}
+
+.menu-mobile-lateral {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    z-index: 1000;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.menu-mobile-lateral.open {
+    display: block;
+}
+
+.menu-mobile-lateral ul {
+    list-style-type: none;
+}
+
+.menu-mobile-lateral ul li {
+    padding: 15px 0;
+}
+
+.menu-mobile-lateral ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    transition: color 0.3s;
+}
+
+.menu-mobile-lateral ul li a:hover {
+    color: #ff3c00;
+}
+
+@media screen and (max-width: 1020px){
+    .flex{
+        flex-direction: column-reverse;
+    }
+
+    .menu-desktop{
+        display: none;
+    }
+
+    .menu-mobile {
+        display: block;
+    }
+}

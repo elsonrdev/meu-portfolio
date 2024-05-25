@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tittle -->
+    <title>Portfólio</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/sections/style.css">
+    <!--Fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Minha logo">
+                </a>
+            </div><!--Logo-->
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="index.html">Sobre mim</a></li>
+                    <li><a href="habilidades.html">Habilidades</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu-mobile">
+                <span class="hamburger-icon">&#9776;</span>
+            </div>
+
+        </div><!--Interface-->
+
+        <nav class="menu-mobile-lateral">
+            <ul>
+                <li><a href="index.html">Sobre mim</a></li>
+                <li><a href="habilidades.html">Habilidades</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+
+                        <h1>Sobre mim</h1>
+
+                        <p>Olá, meu nome é Elson Rodrigues e sou graduando em Análise e Desenvolvimento de Sistemas pela UNDB. Com 20 anos, sou um entusiasta na área de desenvolvimento web e estou me dedicando intensamente para me tornar um desenvolvedor profissional. Tenho um bom relacionamento interpessoal e sei trabalhar bem em equipe, além de possuir conhecimento em metodologias ágeis. Minha paixão pelo desenvolvimento web me motiva a buscar constantemente novas habilidades e conhecimentos para aprimorar minhas competências. Aqui você encontrará uma amostra do meu trabalho e das minhas experiências na área.</p>
+
+                        <h3>Acesse minhas redes:</h3>
+
+                        <div class="links-txt-top-site">
+                            <a class="link-topo-site" href="http://instagram.com/eu.elsondev/">Instagram</a>
+                            <a class="link-topo-site" href="http://github.com/xXELBDR98Xx">Github</a>
+                        </div>
+
+                    </div><!--txt-topo-site-->
+
+                    <div class="img-topo-site">
+                        <img src="images/eu_dev.png" alt="">
+                    </div>
+
+                </div>
+            </div><!--Interface-->
+        </section><!--Topo do Site-->
+    </main>
+
+    <footer>
+        <div class="rodape">
+            <img src="images/Logo Alura Include.png" alt="">
+            <p>Desenvolvido por Elson</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.hamburger-icon').addEventListener('click', function() {
+            document.querySelector('.menu-mobile-lateral').classList.toggle('open');
+        });
+    </script>
+
+</body>
+</html>
